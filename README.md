@@ -1,5 +1,6 @@
 # caerang_sw_2021
 
+
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
@@ -10,7 +11,6 @@ import time
 tickers = pyupbit.get_tickers(fiat="KRW")
 cnt = len(tickers)
 form_class = uic.loadUiType("example.ui")[0]
-
 
 class Worker(QThread):
     finished = pyqtSignal(dict)
